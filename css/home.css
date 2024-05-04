@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --morado: rgba(175,60,249,255);
+    --rojo: rgba(240,10,96,255);
+    --gris: rgba(240,240,240,255);
+    --gris-oscuro: rgba(155,155,155,255);
+    --fondo: rgba(255,255,255,255);
+    --letra: rgba(29,29,27,255);
+    --blur: blur(10px);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    height: 90px;
+    background: var(--fondo);
+    width: 100%;
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, .1);
+    font-weight: 600;
+}
+
+header .header-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header .header-cont .home{
+    cursor: pointer;
+}
+
+header .header-cont .home img{
+    width: 150px;
+    height: 60px;
+}
+
+header .header-cont .perfil img{
+    width: 90px;
+    height: 90px;
+}
+
+header .header-cont .perfil{
+    cursor: pointer;
+}
+
+.bienvenido{
+margin-top: 100px;
+font-size: 20px;
+}
+
