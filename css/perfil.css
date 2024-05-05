@@ -96,9 +96,7 @@ header{
 
 .info_conten{
     margin-top: 2rem;
-    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, .1);
-    height: 335px;
-    border-radius: 14px;
+    height: 500px;
     background: var(--fondo);
     width: 100%;
 }
@@ -108,25 +106,27 @@ header{
     font-weight: 600;
     text-align: center;
     user-select: none;
-    border-radius: 15px 15px 0 0;
     background: linear-gradient(-135deg, var(--morado), var(--rojo));
     color: var(--fondo);
 }
 
 .info_conten form{
     padding: 10px 30px 50px 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .info_conten form .info{
     height: 50px;
-    width: 100%;
     margin-top: 20px;
     position: relative;
 }
 
 .info_conten form .info input{
+    width: 800px;
     height: 100%;
-    width: 100%;
     outline: none;
     font-size: 17px;
     padding-left: 20px;
@@ -175,6 +175,12 @@ form .info input[type="submit"]{
 
 form .info input[type="submit"]:active{
     transform: scale(0.95);
+}
+
+.agregar_info{
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
 }
 
 /*FOOTER*/
@@ -289,6 +295,10 @@ form .info input[type="submit"]:active{
     .dropdown_menu {
         display: block;
     }
+
+    .info_conten form .info input{
+        width: 500px;
+    }
 }
 
 @media (max-width: 576px){
@@ -305,5 +315,9 @@ form .info input[type="submit"]:active{
 
     .perfil{
         display: none;
+    }
+
+    .info_conten form .info input{
+        width: 200px;
     }
 }
