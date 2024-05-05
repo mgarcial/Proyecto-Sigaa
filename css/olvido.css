@@ -73,7 +73,7 @@ header{
     text-align: center;
     user-select: none;
     border-radius: 15px 15px 0 0;
-    background: linear-gradient(-135deg, var(--morado), var(--rojo));
+    background: linear-gradient(-135deg, var(--letra), var(--gris-oscuro));
     color: var(--fondo);
 }
 
@@ -164,9 +164,14 @@ form .campo input[type="submit"]{
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
-    background: linear-gradient(-135deg, var(--morado), var(--rojo));
+    background: linear-gradient(-135deg, var(--letra), var(--gris-oscuro));
     transition: all 0.3s ease;
 }
+
+form .campo input[type="submit"]:hover{
+    background: linear-gradient(-135deg, var(--morado), var(--rojo));
+}
+
 
 form .campo input[type="submit"]:active{
     transform: scale(0.95);

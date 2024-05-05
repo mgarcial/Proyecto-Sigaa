@@ -15,8 +15,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
+    transition: all .2s linear;
 }
 
+div{
+    display: block;
+}
+
+/*Solo Header*/
 header{
     position: absolute;
     top: 0;
@@ -53,8 +59,156 @@ header .header-cont .perfil{
     cursor: pointer;
 }
 
-.bienvenido{
-margin-top: 100px;
-font-size: 20px;
+
+/*Bienvenida y Progreso*/
+.inicio{
+    background: var(--gris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 5rem;
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, .3);
 }
 
+.bienvenida-conten{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 100px;
+    font-size: 25px;
+    line-height: 1.6;
+    width: 150px;
+}
+
+.bienvenida-conten .bienvenido{
+    font-size: 20px;
+}
+
+.bienvenida-conten .nombre:hover{
+    transform: rotate(8deg);
+}
+
+.bienvenida-conten .nombre a{
+    text-decoration: none;
+    color: var(--rojo);
+    margin-left: 15px;
+}
+
+
+
+.progreso{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+} 
+
+.progreso .titulo-progreso{
+    margin-bottom: -5px;
+}
+
+.progreso .barra-base{
+    transform: scale(.8);
+}
+
+.fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-180deg, var(--fondo), var(--rojo));
+    opacity: .1;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+/*Categorias*/
+.categoria-contenedor{
+    height: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoria-contenedor .titulo{
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.categoria-contenedor .botones{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoria-contenedor .botones .boton{
+    display: flex;
+    padding: 2rem 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, .3);
+    margin: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.categoria-contenedor .botones .boton img{
+    height: 10rem;
+}
+
+.categoria-contenedor .botones .boton:hover img{
+    transform: scale(1.2);
+}
+
+.categoria-contenedor .botones .boton button{
+    height: 50px;
+    width: 150px;
+    background-color: var(--letra);
+    color: var(--fondo);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.categoria-contenedor .botones .boton button:hover{
+    transform: scale(1.1);
+    background: linear-gradient(-135deg, var(--morado), var(--rojo));
+    color: var(--fondo);
+}
+
+.footer{
+    opacity: .8;
+    background-color: var(--morado);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+    color: var(--fondo);
+    width: 100%;
+    text-decoration: none;
+}
+
+.footer p{
+    cursor: pointer;
+}
+
+.footer p:hover{
+    text-decoration: underline;
+}
