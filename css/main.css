@@ -1,0 +1,39 @@
+*{margin:0;padding:0;text-decoration:none}
+body{background:#ffffff;}
+
+html.home .body{
+    position: relative;
+  
+}
+
+a{
+  align-items: center;
+    justify-content: center;
+  margin: 0 auto;
+}
+.titulo {
+  text-align: center;
+}
+
+.barra {
+  text-align: center;
+}
+
+.categorias {
+  text-align: center;
+}
+
+p{
+  position: relative;
+  top: 90%;
+  margin-top: 50px;
+  text-align: center;
+}
+.botones{
+text-align: center;
+  justify-content: center;
+      margin: 0 auto;
+    position: relative;
+
+}
+
