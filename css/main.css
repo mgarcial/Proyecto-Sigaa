@@ -11,15 +11,15 @@ a{
     justify-content: center;
   margin: 0 auto;
 }
-.titulo {
+html.home .titulo {
   text-align: center;
 }
 
-.barra {
+html.home .barra {
   text-align: center;
 }
 
-.categorias {
+html.home .categorias {
   text-align: center;
 }
 
@@ -29,7 +29,7 @@ p{
   margin-top: 50px;
   text-align: center;
 }
-.botones{
+html.home .botones{
 text-align: center;
   justify-content: center;
       margin: 0 auto;
